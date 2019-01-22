@@ -1,7 +1,11 @@
+//Java Bean class for buyer information.
+
 package com.flipkart.registration;
 
+
+
 public class BuyerBean {
-	private String userName, name, email, password, DOB;
+	private String userName, name, email, password, dOB;
 
 	public String getUserName() {
 		return userName;
@@ -36,11 +40,11 @@ public class BuyerBean {
 	}
 
 	public String getDOB() {
-		return DOB;
+		return dOB;
 	}
 
 	public void setDOB(String dOB) {
-		DOB = dOB;
+		this.dOB = dOB;
 	}
 
 }

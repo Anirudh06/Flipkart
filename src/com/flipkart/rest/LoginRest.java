@@ -1,8 +1,9 @@
-//Rest API for registration.
+//Rest API for login.
 
 package com.flipkart.rest;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -16,17 +17,19 @@ import org.glassfish.jersey.media.multipart.FormDataParam;
 
 import com.flipkart.registration.*;
 
-@Path("/registration")
-public class RegistrationRest {
-
+@Path("/login")
+public class LoginRest {
+	
 	@POST
-	@Path("/buyer_registration")
+	@Path("/login_credential")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public int buyerRegistration(BuyerBean user)
+	public String loginCredentials(LoginBean user)
 	{
-		BuyerRegistration br = new BuyerRegistration();
-		int status = br.saveBuyerInformation(user);
+		Login login = new Login();
+		String status = login.retrieveLoginCredential(user);
 		return status;
 	}
+	
 }
+
