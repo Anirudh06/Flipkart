@@ -8,7 +8,7 @@
  */
 
 
-package com.flipkart.registration;
+package com.flipkart.controller;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,7 +19,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.flipkart.item.BuyerBean;
+import com.flipkart.model.BuyerBean;
 
 public class BuyerRegistration {
 	
@@ -37,8 +37,9 @@ public class BuyerRegistration {
 			
 			//Database Connection
 			String url = "jdbc:mysql://127.0.0.1:3306/Flipkart?useSSL=false";
-	        String duser = "Jagatdeep";
-	        String dpassword = "Semraj@135";
+	        String duser = "ooad";
+	        String dpassword = "ooad";
+	        Class.forName("com.mysql.jdbc.Driver"); 
 	        Connection con = DriverManager.getConnection(url, duser, dpassword);
 	        
 	        //Query for checking user name already exist or not.

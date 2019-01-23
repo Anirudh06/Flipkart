@@ -1,10 +1,11 @@
-package com.flipkart.registration;
+package com.flipkart.controller;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import com.flipkart.item.*;
+
+import com.flipkart.model.*;
 public class ItemDetails {
 	public int itemId;
 	public String retrieveItemDetails(ItemBean item)
@@ -15,8 +16,9 @@ public class ItemDetails {
 		{
 			//Database Connection
 			String url = "jdbc:mysql://127.0.0.1:3306/Flipkart?useSSL=false";
-	        String duser = "Jagatdeep";
-	        String dpassword = "Semraj@135";
+	        String duser = "ooad";
+	        String dpassword = "ooad";
+	        Class.forName("com.mysql.jdbc.Driver"); 
 	        Connection con = DriverManager.getConnection(url, duser, dpassword);
 	        
 	        //Query for checking user name exist or not. If user name exist then it retrieves all the data of that particular user. 

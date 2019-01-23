@@ -1,6 +1,6 @@
 //Java Bean class for buyer information.
 
-package com.flipkart.item;
+package com.flipkart.model;
 
 
 

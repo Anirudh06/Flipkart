@@ -1,4 +1,4 @@
-package com.flipkart.item;
+package com.flipkart.model;
 
 public class ItemBean {
 

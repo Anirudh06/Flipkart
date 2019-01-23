@@ -12,8 +12,8 @@ import javax.ws.rs.core.Response.ResponseBuilder;
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.FormDataParam;
 
-import com.flipkart.registration.*;
-import com.flipkart.item.*;
+import com.flipkart.controller.*;
+import com.flipkart.model.*;
 
 @Path("/item")
 public class ItemRest{

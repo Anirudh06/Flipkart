@@ -6,14 +6,14 @@
  *  res = 3 :: Server side Error.
  */
 
-package com.flipkart.registration;
+package com.flipkart.controller;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.flipkart.item.LoginBean;
+import com.flipkart.model.LoginBean;
 
 public class Login {
 	private String userName,password;
