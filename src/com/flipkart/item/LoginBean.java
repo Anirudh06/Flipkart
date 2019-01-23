@@ -1,6 +1,6 @@
 //Java Bean class for login credentials.
 
-package com.flipkart.registration;
+package com.flipkart.item;
 
 public class LoginBean {
 	private String userName,password;

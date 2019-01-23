@@ -1,12 +1,10 @@
-package com.flipkart.item;
+package com.flipkart.registration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
-import com.flipkart.registration.LoginBean;
-
+import com.flipkart.item.*;
 public class ItemDetails {
 	public int itemId;
 	public String retrieveItemDetails(ItemBean item)

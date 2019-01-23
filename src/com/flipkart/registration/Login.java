@@ -13,6 +13,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import com.flipkart.item.LoginBean;
+
 public class Login {
 	private String userName,password;
 	public int status = 0;
@@ -26,10 +28,12 @@ public class Login {
 		{
 			//Database Connection
 			String url = "jdbc:mysql://127.0.0.1:3306/Flipkart?useSSL=false";
-	        String duser = "Jagatdeep";
-	        String dpassword = "Semraj@135";
+	        String duser = "ooad";
+	        String dpassword = "ooad";
+	        Class.forName("com.mysql.jdbc.Driver"); 
+
 	        Connection con = DriverManager.getConnection(url, duser, dpassword);
-	        
+	        System.out.println(con);
 	        //Query for checking user name exist or not. If user name exist then it retrieves all the data of that particular user. 
 	        String query1 = "SELECT * FROM Flipkart.BUYER_INFORMATION WHERE(`USER_NAME`=?) ;";
 	        PreparedStatement preparedStmt1 = con.prepareStatement(query1);

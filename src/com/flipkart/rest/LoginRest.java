@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response.ResponseBuilder;
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.FormDataParam;
 
+import com.flipkart.item.LoginBean;
 import com.flipkart.registration.*;
 
 @Path("/login")
@@ -32,4 +33,3 @@ public class LoginRest {
 	}
 	
 }
-

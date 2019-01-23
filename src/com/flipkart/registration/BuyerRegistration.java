@@ -19,6 +19,8 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.flipkart.item.BuyerBean;
+
 public class BuyerRegistration {
 	
 	private String userName, name, email, password, dOB;
