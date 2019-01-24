@@ -36,7 +36,8 @@ public class BuyerRegistration {
 			dOB = user.getDOB();
 			
 			//Database Connection
-			String url = "jdbc:mysql://127.0.0.1:3306/Flipkart?useSSL=false";
+		Class.forName("com.mysql.jdbc.Driver");
+		String url = "jdbc:mysql://127.0.0.1:3306/Flipkart?useSSL=false";
 	        String duser = "ooad";
 	        String dpassword = "ooad";
 	        Class.forName("com.mysql.jdbc.Driver"); 
